@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="24pt"
+        android:gravity="start|top"
+        android:textColor="@color/white"
+        android:fontFamily="@font/wolgasttwobold"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/circlebackgroundpurple"
+                android:src="@drawable/ic_add_black_add"
+                android:onClick="openPage" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="add shoe"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/circlebackgroundyellow"
+                android:onClick="openPage"
+                android:src="@drawable/ic_delete_black_24dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="delete shoe"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="74dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/circlbackgroundgreen"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            android:onClick="openPage1"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="View Inventory"
+            android:textSize="17dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

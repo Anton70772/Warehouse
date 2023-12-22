@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoe warehouse"
+            android:textColor="#0A6C0E"
+            android:textSize="16pt"
+            android:fontFamily="@font/nigsbergdemo"
+            android:layout_gravity="top"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nigsbergdemo"
+            android:textSize="8pt"
+            android:text="Name  " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed1"
+            android:textColor="#ffff"
+            android:ems="12" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:fontFamily="@font/nigsbergdemo"
+            android:textSize="8pt"
+            android:text="Price  " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed2"
+            android:textColor="#ffff"
+            android:inputType="number"
+            android:ems="12" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nigsbergdemo"
+            android:textSize="8pt"
+            android:text="Kolvo  " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed3"
+            android:textColor="#ffff"
+            android:inputType="number"
+            android:ems="12" />
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal" >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Subtotal" />-->
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10sp"-->
+<!--            android:background="@color/cardview_dark_background"-->
+<!--            android:id="@+id/txtsub"-->
+<!--            android:textColor="#fff"-->
+<!--            android:enabled="false"-->
+<!--            android:ems="10" />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal" >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Balance" />-->
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10sp"-->
+<!--            android:background="@color/cardview_dark_background"-->
+<!--            android:id="@+id/txtbalance"-->
+<!--            android:textColor="#fff"-->
+<!--            android:enabled="false"-->
+<!--            android:ems="10" />-->
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:text="Add"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/tb1"
+            android:layout_width="407dp"
+            android:layout_height="360dp"
+            android:stretchColumns="+">
+
+            <TableRow
+                android:id="@+id/tbrow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="129dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nigsbergdemo"
+                    android:text="Name"
+                    android:textColor="#ffff" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nigsbergdemo"
+                    android:text="Price"
+                    android:textColor="#ffff" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nigsbergdemo"
+                    android:text="Kolvo"
+                    android:textColor="#ffff" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
